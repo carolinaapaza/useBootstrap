@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+	<head>
+		<meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Bootstrap</title>
+	    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+	    <!-- <link th:rel="stylesheet" th:href="@{/css/estilos.css}">  -->
+	</head>
+	
+	<body>
+		<div class="container-fluid">
+				<header></header>
+				<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+				    <div class="container-fluid">
+				    <a class="navbar-brand" href="#">Opciones</a>
+				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				      <span class="navbar-toggler-icon"></span>
+				    </button>
+				    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				      <div class="navbar-nav">
+				        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+				        <a class="nav-link" href="#">Productos</a>
+				        <a class="nav-link" href="#">Servicios</a>
+				        <a class="nav-link" href="#">Consejos</a>
+				        <a class="nav-link" href="#">Contacto</a>
+				        <a class="nav-link disabled">En construcción</a>
+				      </div>
+				    </div>
+				  </div>
+				</nav>
+				
+				
+				
+				<div class="row">
+					<div class="card w-75 mb-3">
+						  <div class="card-body">
+						    <h5 class="card-title">Somos pioneros en el rubro</h5>
+						    <p class="card-text">Desde el año 2017 nos dedicamos con mucho esfuerzo a brindar un servicio de calidad a nuestros clientes. Trabajamos con el propósito de hacer accesibles las últimas tendencias en productos y servicios para las mascotas de las familias argentinas. Por eso, desde nuestros inicios, mantenemos el compromiso con la calidad en cada paso y miramos al futuro a través de la apertura de nuevas sucursales.</p>
+						    <a href="#" class="btn btn-primary">Ver más</a>
+						  </div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="card w-75 mb-3">
+						  <div class="card-body">
+						    <h5 class="card-title">Cómo comenzó nuestra historia</h5>
+						    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida, lorem non posuere placerat, felis leo pharetra nunc, non pharetra orci leo vel tellus. Sed eu venenatis odio, nec euismod massa. Sed gravida a est malesuada blandit. Integer eget dapibus eros. Cras finibus diam a ornare iaculis. Aenean consectetur vitae neque quis pellentesque. Pellentesque vel porttitor nisi. Vivamus vitae quam luctus, efficitur justo et, eleifend nunc. Ut sollicitudin felis vestibulum pulvinar mattis. Mauris et elit id erat hendrerit rhoncus in ac eros.</p>
+						    <a href="#" class="btn btn-primary">Ver más</a>
+						  </div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="card w-75 mb-3">
+						  <div class="card-body">
+						    <h5 class="card-title">Ut id dolor id turpis</h5>
+						    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula sapien, eleifend id nunc et, finibus malesuada urna. Duis facilisis ipsum quis ex tincidunt feugiat. Ut euismod quam nunc.</p>
+						    <a href="#" class="btn btn-primary">Ver más</a>
+						  </div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="card w-75 mb-3">
+						  <div class="card-body">
+						    <h5 class="card-title">Pellentesque rutrum libero</h5>
+						    <p class="card-text">Nullam varius tellus quis scelerisque gravida. Curabitur quis tristique justo, nec placerat massa. Integer libero sem, commodo sed congue eget, venenatis et mi.</p>
+						    <a href="#" class="btn btn-primary">Ver más</a>
+						  </div>
+					</div>
+				</div>
+				
+				<aside>
+				    <h2>Novedades</h2>
+					 <nav id="menuSecundario">
+					    <ul>
+					      <li><a href="#">Día del animal</a></li>
+					      <li><a href="#">Adiestramiento canino</a></li>
+					    </ul>
+				    </nav> 
+				</aside>
+				
+				
+				 <footer></footer> 
+		</div>
+		
+	<script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
+	</body>
+</html>

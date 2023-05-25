@@ -15,7 +15,7 @@ public class MainController {
 		return "index";
 	}
 	
-	@GetMapping("/form-contacto")
+	@GetMapping("/formulario-contacto")
 	public String getContactoPage(Model model) {
 		model.addAttribute("titulo", "Formulario de contacto");
 		return "contacto";

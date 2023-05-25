@@ -11,6 +11,7 @@ public class MainController {
 	@GetMapping("/inicio")
 	public String getIndexPage(Model model) {
 		model.addAttribute("titulo", "Bienvenidos a Programación Visual");
+		model.addAttribute("pie", "Desarrollado por Programación Visual año 2023");
 		return "index";
 	}
 }

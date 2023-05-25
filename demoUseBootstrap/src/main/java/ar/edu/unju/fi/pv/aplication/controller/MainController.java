@@ -14,4 +14,9 @@ public class MainController {
 		model.addAttribute("pie", "Desarrollado por Programación Visual año 2023 - Jujuy - Argentina");
 		return "index";
 	}
+	
+	@GetMapping("/contacto")
+	public String getContactoPage() {
+		return "contacto";
+	}
 }

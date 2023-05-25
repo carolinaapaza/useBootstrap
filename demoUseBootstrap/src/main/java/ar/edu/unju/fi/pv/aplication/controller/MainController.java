@@ -3,6 +3,7 @@ package ar.edu.unju.fi.pv.aplication.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class MainController {
@@ -16,8 +17,9 @@ public class MainController {
 	}
 	
 	@GetMapping("/formulario-contacto")
-	public String getContactoPage(Model model) {
-		model.addAttribute("titulo", "Formulario de contacto");
-		return "contacto";
+	public ModelAndView getContactoPage() {
+		ModelAndView mv = new ModelAndView("contacto");
+		mv.addObject("titulo", "Formulario de contacto");
+		return mv;
 	}
 }

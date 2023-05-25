@@ -16,10 +16,16 @@ public class MainController {
 		return "index";
 	}
 	
+
 	@GetMapping("/formulario-contacto")
 	public ModelAndView getContactoPage() {
 		ModelAndView mv = new ModelAndView("contacto");
 		mv.addObject("titulo", "Formulario de contacto");
 		return mv;
+	}
+	
+	@GetMapping("/lista-productos")
+	public String getProductosPage() {
+		return "productos";
 	}
 }
